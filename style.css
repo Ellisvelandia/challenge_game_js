@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Berkshire Swash", cursive;
+}
+
+body {
+  background-image: linear-gradient(90deg, #0a0101, #290303);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.person {
+  width: 45%;
+  background-color: #fff;
+  border: 1px solid rgb(114, 9, 9);
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background-image: linear-gradient(90deg, #470a0a, #fff8f8);
+  background-size: cover;
+}
+
+.person h2 {
+  margin: 20px 0;
+  font-family: "Water Brush", cursive;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.person .progress {
+  background-color: #888;
+  height: 30px;
+}
+
+.person .progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+.person img {
+  width: 200px;
+  height: 250px;
+  margin: 10px auto;
+  display: block;
+  cursor: pointer;
+}
+
+.person button {
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  margin: 20px 0;
+  font-size: 18px;
+}
+button:hover {
+  color: #ddbcbc;
+  background: #960a0a;
+  box-shadow: 0 0 10px #f32121, 0 0 40px #6b0404, 0 0 80px #f32121;
+}
+
+/* IMG  - ryuk*/
+
+.ryuk {
+  position: absolute;
+}
+
+.ryuk {
+  animation-name: ryuk;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.ryuk img {
+  width: 230px;
+}
+
+.ryuk:active {
+  transform: scale(2.8);
+}
+
+@keyframes ryuk {
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  20% {
+    left: 20%;
+    top: 10%;
+  }
+
+  40% {
+    left: 40%;
+    top: 30%;
+  }
+
+  60% {
+    left: 60%;
+    top: 40%;
+  }
+
+  80% {
+    left: 65%;
+    top: 50%;
+  }
+
+  100% {
+    left: 67%;
+    top: 60%;
+  }
+}
+
+.container i {
+  position: absolute;
+  width: 1px;
+  height: 5px;
+  top: -10px;
+  background: #fff8f8;
+  animation: rain linear infinite;
+  z-index: -1;
+}
+
+@keyframes rain {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 100vh;
+  }
+}

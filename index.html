@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Challenge_Game_js</title>
+  </head>
+  <body>
+    <audio controls autoplay loop>
+      <source src="media/song.mp3" type="audio/mpeg" />
+      <source src="song.ogg" type="audio/ogg" />
+    </audio>
+    <div class="ryuk">
+      <img src="media/ryuk.png" />
+    </div>
+    <div class="container">
+      <div class="person">
+        <div class="yagami-health progress">
+          <span></span>
+        </div>
+        <h2>Yagami</h2>
+        <img src="media/yagami.png" alt="yagami" id="yagami" />
+        <audio id="audio-kira" src="media/kira.mp3"></audio>
+
+        <button id="yagami-attack">Attack</button>
+        <button id="yagami-make-health">Health</button>
+        <p id="yagami-alive"></p>
+      </div>
+      <div class="person">
+        <div class="L-health progress">
+          <span></span>
+        </div>
+        <h2>L</h2>
+        <img src="media/L.png" alt="L" id="L" />
+        <audio id="audio-L" src="media/L-voice.mp3"></audio>
+
+        <button id="L-attack">Attack</button>
+        <button id="L-make-health">Health</button>
+        <p id="L-alive"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
